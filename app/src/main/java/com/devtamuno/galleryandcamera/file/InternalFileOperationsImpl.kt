@@ -8,7 +8,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import java.io.IOException
 
-class InternalFilesOperationsImpl(private val context: Context) : FileOperations {
+class InternalFileOperationsImpl(private val context: Context) : FileOperations {
 
     override suspend fun loadPhotosFromStorage(): List<InternalStoragePhoto> {
         return withContext(Dispatchers.IO) {
